@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="icon" type="img/png" href="img/love.ico">
+  <title>I Love You</title>	    
+  <link type="text/css" rel="stylesheet" href="./js/default.css">
+  <script type="text/javascript" src=" js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jscex.min.js"></script>
+  <script type="text/javascript" src="js/jscex-parser.js"></script>
+  <script type="text/javascript" src="js/jscex-jit.js"></script>
+  <script type="text/javascript" src="js/jscex-builderbase.min.js"></script>
+  <script type="text/javascript" src="js/jscex-async.min.js"></script>
+  <script type="text/javascript" src="js/jscex-async-powerpack.min.js"></script>
+  <script type="text/javascript" src="js/functions.js" charset="utf-8"></script>
+  <script type="text/javascript" src="js/love.js" charset="utf-8"></script>
+  <style type="text/css">
+    .STYLE1 {
+      color: #116D6E
+    }
+    .audio-container{
+      text-align: center;
+    }
+    .audio{
+
+    }
+    .say{
+      margin-bottom: 10px !important;
+    }
+    .hidden{
+      display: none;
+    }
+    #play-text{
+      text-align: center;
+      color:#fff;
+      font-size: 28px !important;
+      font-family: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div class="audio-container">
+    <p id="play-text">Please play the audio</p>
+    <audio id="audio" autoplay loop controls>
+      <source src="audio/Enchanted (Taylor Swift) cover by Arthur Miguel.mp3" type="audio/mp3" />
+      Your browser does not support the audio element.
+    </audio>
+    <!--   <img id="play-text" src="img/kiss-hug.gif" alt=""> -->
+  </div>
+  <div class="hidden" id="content">
+   <div id="main">
+    <div id="error">Error 404 Babii not found......</div>
+    <div id="wrap">
+      <div id="text">
+       <div id="code">
+         <font color="#FFF">
+          <div class="message-container">
+            <span class="say">Happy 2nd Monthsary, Babii!</span><br>
+            <span class="say"> </span><br>
+            <span class="say">Two months filled with laughter, love,trials and unforgettable moments.</span><br><br>
+            <span class="say">You're my shining star, bringing joy to my life every day.</span><br><br>
+            <span class="say">Your beauty, inside and out, leaves me in awe.</span><br><br>
+            <span class="say">Your smile lights up my world.</span><br><br>
+            <span class="say">Thank you for being my rock and my everything.</span><br><br>
+            <span class="say">Here's to many more months of happiness and love.</span><br><br>
+            <span class="say"> </span><br>
+            <span class="say"><span class="space"></span> -- Forever yours --</span><br><br>
+            <span class="say" style="color:red;"><span class="space-2"></span>Camilo</span><br><br>
+          </div>
+        </font>
+
+      </p>
+    </div>
+  </div>
+  <div id="clock-box">
+    <span class="STYLE1"></span><font color="#116D6E"></font>
+    <span class="STYLE1">
+
+
+    </span>
+
+
+    <div id="cock"></div>
+
+
+    <img class="img-anime" src="img/image.png" width="250" style="bottom:100px;" /> 
+
+
+  </div>
+  <canvas id="canvas" width="1100" height="680"></canvas>
+</div>
+
+</div>
+<script type="text/javascript" src="js/main.js"></script>
+<script>
+ const audio = document.getElementById("audio");
+ const content = document.getElementById("content");
+ const playText = document.getElementById("play-text");
+ const playimg = document.getElementById("play-img");
+
+ audio.addEventListener("play", () => {
+      // Hide the audio controls
+      audio.controls = false;
+      // Hide the play text
+      playText.style.display = "none";
+      // Show the hidden content
+      content.classList.remove("hidden");
+    });
+
+
+
+
+  </script>
+</body>
+</html>

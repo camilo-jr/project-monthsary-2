@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I love you</title>
+    <link rel="icon" type="img/png" href="img/love.ico">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <style>
+        /* Global Styles */
+        body {
+            font-family:monospace !important;
+            background-color: #F0F0F0 !important; /* Light gray background */
+        }
+        .modal{
+            background-color: transparent;
+        }
+        /* Navbar Styles */
+        .navbar-custom {
+            box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+            background-color: #F5F5F5; /* Pleasant green navbar */
+        }
+        .card{
+         box-shadow: rgba(255, 255, 255, 0.4) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.5) 0px 50px 100px -20px, rgba(0, 0, 0, 0.5) 0px 30px 60px -30px;
+     }
+     .modal .btn-primary, .btn-light{
+         box-shadow: rgba(255, 255, 255, 0.4) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.5) 0px 50px 100px -20px, rgba(0, 0, 0, 0.5) 0px 30px 60px -30px;
+
+     }
+     .navbar-brand {
+        font-size: 22px;
+        font-weight: 900;
+        text-transform:capitalize;
+        color: #000; /* Dark gray brand text */
+    }
+
+    .nav-link {
+        color: #000;
+        font-size: 18px;
+        font-weight: 900;
+        text-transform: capitalize;
+    }
+    /* Style the video player container */
+    .video-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .dropdown-item:focus{
+        background-color: #000 !important;
+    }
+    /* Style the video */
+    video {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    /* Style the play/pause button */
+    .controls button {
+        background-color: #3498db;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+
+    /* Style the progress bar */
+    .controls input[type="range"] {
+        width: 100%;
+    }
+
+    /* Style for transitioning video opacity */
+    .video-fade-transition {
+        opacity: 1;
+        transition: opacity 1s ease-in-out;
+    }
+
+    /* Hide videos during the transition */
+    .video-fade-transition.video-fading {
+        opacity: 0;
+    }
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-custom navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="img/kiss.png" alt="" width="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#preventMsg">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#preventMsg">Documentations</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            More
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"  data-bs-toggle="modal" data-bs-target="#modal1">Page 2</a></li>
+                            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#modal2">Page 3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container h-100 mt-4 mb-4">
+        <section class="card">
+            <header class="card-header">
+                <h4 style="font-weight: bold;" class="card-title text-center p-2">Our Monthsary Video Playlist</h4 style="font-weight: bold;">
+            </header>
+            <article class="card-body p-3">
+                <div class="video-container mt-4 mb-2">
+                    <div class="row">
+                        <div class="col-md-4 p-2">
+                            <video controls id="video1" class="video-fade-transition">
+                                <source src="video/clip_1.mp4" type="video/mp4"/>
+                            </video>
+                        </div>
+                        <div class="col-md-4 p-2">
+                            <video controls id="video2" class="video-fade-transition">
+                                <source src="video/You're My Inspiration - Chicago _ Lyrics.mp4" type="video/mp4"/>
+                            </video>
+                        </div>
+                        <div class="col-md-4 p-2">
+                            <video controls id="video3" class="video-fade-transition">
+                                <source src="video/Dro Perez - Aking Pahinga (Lyrics) ft_I-ghie.mp4" type="video/mp4"/>
+                            </video>
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-md-4 p-2">
+                            <video controls id="video4" class="video-fade-transition">
+                                <source src="video/Micah Cole.mp4" type="video/mp4"/>
+                            </video>
+                        </div>
+                        <div class="col-md-4 p-2">
+                            <video controls id="video5" class="video-fade-transition">
+                                <source src="video/So In Love - The Moffatts (Lyrics).mp4" type="video/mp4"/>
+                            </video>
+                        </div>
+                        <div class="col-md-4 p-2">
+                            <video controls id="video6" class="video-fade-transition">
+                                <source src="video/Brad Paisley - She's Everything.mp4" type="video/mp4"/>
+                            </video>
+                        </div>
+                    </div>
+                </div>
+
+            </article>
+            <div class="card-footer text-center pt-3 pb-3">
+                <button class="btn btn-info btn-sm controls" id="shuffleBtn">Shuffle</button>
+                <button class="btn btn-danger btn-sm controls" id="toggleBtn">Toggle</button>
+                <!-- <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#uploadModal">Upload</button> -->
+            </div>
+        </section>
+    </div>
+
+
+
+    <!-- Modal 1 -->
+    <div class="modal fade" id="modal1" data-bs-backdrop="static" tabindex="1">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark">
+                <div class="modal-body">
+                    <h4 class="text-light">This page says</h4>
+                    <p class="text-light">Are you sure you want to leave this page?</p>
+                    <div class="float-end">
+                        <button class="btn btn-primary" onclick="window.location.href='index.html';">
+                            Ok
+                        </button>
+                        <button class="btn btn-light" data-bs-dismiss="modal">
+                            Cancel
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal2 -->
+    <div class="modal fade" id="modal2" data-bs-backdrop="static" tabindex="1">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark">
+                <div class="modal-body">
+                    <h4 class="text-light">This page says</h4>
+                    <p class="text-light">Are you sure you want to leave this page?</p>
+                    <div class="float-end">
+                        <button class="btn btn-primary" onclick="window.location.href='monthsary(2.1).html';">
+                            Ok
+                        </button>
+                        <button class="btn btn-light" data-bs-dismiss="modal">
+                            Cancel
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Upload Videos Modal -->
+    <div class="modal fade" id="uploadModal" data-bs-backdrop="static" tabindex="1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4></h4>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="assets/js/video_player.js"></script>
+
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

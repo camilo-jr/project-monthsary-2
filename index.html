@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I love you</title>
+    <link rel="icon" type="img/png" href="img/love.ico">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/splide-4.1.3/dist/css/splide.min.css">
+    <style>
+        /* Global Styles */
+        body {
+            background-color: #F0F0F0 !important; /* Light gray background */
+            font-family: times new roman;
+        }
+        .modal{
+            background-color: transparent;
+        }
+        /* Navbar Styles */
+        .navbar-custom {
+            box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+            background-color: #F5F5F5; /* Pleasant green navbar */
+        }
+
+        .navbar-brand {
+            font-size: 28px;
+            font-weight: 900;
+            text-transform:capitalize;
+            color: #000; /* Dark gray brand text */
+        }
+
+        .nav-link {
+            color: #000;
+            font-size: 18px;
+            font-weight: 900;
+            text-transform: capitalize;
+        }
+        /* Add custom CSS for Splide */
+        .splide__slide{
+         padding: 5px 5px;
+     }
+     .splide__slide img {
+        width:100%;
+        margin-bottom: 0px !important;
+        height: 500px !important;
+        border-radius:5px !important;
+
+    }
+    @media screen and (max-width: 400px) {
+     p{
+        font-size: 14px !important;
+    }
+    h1{
+        font-size: 22px !important;
+    }
+    .splide__slide img {
+        width:100%;
+        margin-bottom: 0px !important;
+        height: 200px !important;
+        border-radius:5px !important;
+    }
+    .card{
+        margin-top: 70px !important;
+
+    }
+
+}
+@media screen and (max-width: 300px) {
+    .splide_slide p{
+        font-size: 14px !important;
+    }
+    .splide__slide img {
+        width:100%;
+        margin-bottom: 50px !important;
+        height: 100px !important;
+        border-radius:5px !important;
+    }
+    .card{
+        margin-top: 70px !important;
+
+    }
+
+}
+
+.card{
+  box-shadow: rgb(39, 40, 41,0.5) 0px 5px 15px;
+  background: #272829;
+  margin-top:70px;
+  margin-bottom: 70px;
+}
+.card-body{
+    padding: 20px;
+}
+main{
+    height: 100vh;
+}
+.border-none{
+    border:0px !important;
+}
+.splide__pagination {
+    display: none !important;
+}
+
+
+</style>
+</head>
+<body>
+    <nav id="navbar" class="navbar navbar-custom navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="img/kiss.png" alt="" width="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#preventMsg">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Documentation</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            More
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="index.html">Page 2</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#modal2">Page 3</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section>
+            <article>
+
+                <div class="modal fade" id="modal2" data-bs-backdrop="static" tabindex="1">
+                    <div class="modal-dialog">
+                        <div class="modal-content bg-dark">
+                            <div class="modal-body">
+                                <h4 class="text-light">This page says</h4>
+                                <p class="text-light">Are you sure you want to leave this page?</p>
+                                <div class="float-end">
+                                    <button class="btn btn-primary" onclick="window.location.href='monthsary(2.1).html';">
+                                        Ok
+                                    </button>
+                                    <button class="btn btn-light" data-bs-dismiss="modal">
+                                        Cancel
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="preventMsg" data-bs-backdrop="static" tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content bg-dark text-light">
+                            <div class="modal-body">
+                                <h4>This page says</h4>
+                                <p>Are you sure you want to leave this page?</p>
+                                <div class="float-end">
+                                    <button class="btn btn-primary" onclick="window.location.href='home.html';">
+                                        Ok
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section>
+            <article class="container">
+                <div class="row">   
+                    <div class="col col-md-4 col-lg-12"> 
+                       <div class="card">
+                        <div class="card-header border-light">
+                            <h1 class="text-center text-danger">Happy 2nd Monthsary</h1>
+                        </div>
+                        <div class="card-body">
+                            <div class="splide" aria-label="Splide Basic HTML Example">
+                                <div class="splide__track">
+                                    <ul class="splide__list">
+                                        <li class="splide__slide">
+                                            <img src="assets/images/slide_1.jpg" alt="">
+                                        </li>
+                                        <li class="splide__slide">
+                                            <img src="assets/images/slide_2.jpg" alt=""/>
+                                        </li>
+                                        <li class="splide__slide">
+                                            <img src="assets/images/slide_3.jpg" alt=""/>
+                                        </li>
+                                        <li class="splide__slide">
+                                            <img src="assets/images/slide_4.jpg" alt=""/>
+                                        </li>
+                                        <li class="splide__slide">
+                                            <img src="assets/images/slide_5.jpg" alt=""/>
+                                        </li>
+                                        <li class="splide__slide">
+                                            <img src="assets/images/slide_6.jpg" alt=""/>
+                                        </li>
+                                        <li class="splide__slide">
+                                            <img src="assets/images/slide_7.jpg" alt=""/>
+                                        </li>
+                                        <li class="splide__slide">
+                                            <img src="assets/images/slide_8.jpg" alt=""/>
+                                        </li>
+                                        <li class="splide__slide">
+                                            <img src="assets/images/slide_9.jpg" alt=""/>
+                                        </li>
+                                        <li class="splide__slide">
+                                            <img src="assets/images/slide_10.jpg" alt=""/>
+                                        </li>
+                                        <li class="splide__slide">
+                                            <img src="assets/images/slide_11.jpg" alt=""/>
+                                        </li>
+                                        <li class="splide__slide">
+                                            <img src="assets/images/slide_12.jpg" alt=""/>
+                                        </li>
+                                        <li class="splide__slide">
+                                            <img src="assets/images/slide_12.1.jpg" alt=""/>
+                                        </li>
+                                        <li class="splide__slide">
+                                            <img src="assets/images/slide_13.png" alt=""/>
+                                        </li>
+                                        <li class="splide__slide">
+                                            <img src="assets/images/slide_14.jpg" alt=""/>
+                                        </li>
+                                        <li class="splide__slide">
+                                            <img src="assets/images/slide_15.jpg" alt=""/>
+                                        </li>
+                                        <li class="splide__slide">
+                                            <img src="assets/images/slide_16.jpg" alt=""/>
+                                        </li>
+                                        <li class="splide__slide">
+                                            <img src="assets/images/slide_17.jpg" alt=""/>
+                                        </li>
+                                        <li class="splide__slide">
+                                            <img src="assets/images/slide_18.jpg" alt=""/>
+                                        </li>
+                                        <li class="splide__slide">
+                                            <img src="assets/images/slide_19.jpg" alt=""/>
+                                        </li>
+                                        <li class="splide__slide">
+                                            <img src="assets/images/slide_20.jpg" alt=""/>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div> 
+                        </div>
+                        <!--  card footer  -->
+                        <div class="card-footer border-light">
+                            <p class="text-light text-center"><i>Just Wait 5 seconds for auto play or click sliders arrow</i></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <audio autoplay loop>
+        <source  src="audio/Ne-Yo - Because Of You (Lyrics).mp3"/>
+    </audio>
+</main>
+<script src="assets/splide-4.1.3/dist/js/splide.min.js"></script>
+<script type="text/javascript">
+    var splide = new Splide( '.splide', {
+        type    : 'loop',
+        perPage : 1,
+        autoplay: true,
+        interval: 5000,
+    } );
+
+    splide.mount();
+</script>
+
+
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

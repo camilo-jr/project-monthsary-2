@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Monthsary</title>
+  <link rel="stylesheet" href="css/flower.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <style>
+    body{
+      font-family: Times New Roman !important;
+    }
+   .click-btn{
+    width: 100%;
+    text-align: center; /* Center the button */
+    margin-top: 40px;
+  }
+  .button{
+    border-radius:10px;
+    padding: 10px 20px; /* Adjust padding */
+    font-size: 21px;
+    font-family: Elephant;
+    text-transform: uppercase;
+    background-color: #54b8aa;
+    color: #fff;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out; /* Add transition for animation */
+  }
+  /* Style for the button */
+  #popupButton {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0; /* Initially hidden */
+    transform: scale(0.8); /* Initially smaller */
+    transition: opacity 0.5s, transform 0.5s;
+  }
+
+  /* Fading animation */
+  #popupButton.fade-in {
+    opacity: 1;
+  }
+
+  /* Zooming animation */
+  #popupButton.zoom-in {
+    transform: scale(1);
+  }
+  .btn-warning{
+    font-weight: 900 !important;
+    text-transform: ;
+    font-size: 28px;
+    border:1px solid #000;
+  }
+  .btn-primary{
+    background-color: #000;
+    color:#fff;
+    font-weight: 900 !important;
+    text-transform: ;
+    font-size: 28px;
+    border:1px solid #000;
+  }
+  .btn-primary:hover{
+    background: #000;
+    border:1px solid #000 !important;
+    color:#fff;
+  }
+  .btn-primary:focus{
+    background: #000 !important;
+  }
+
+  .btn-danger{
+    font-weight: 900 !important;
+    text-transform: ;
+    font-size: 28px;
+  }
+
+  .modal-title{
+    font-weight: 900 !important;
+    font-size: 28px !important;
+    color: #000;
+  }
+  .modal p{
+    font-size:21px;
+    text-align: justify;
+    color: #000 !important;
+  }
+  .modal-content{
+     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3) !important;
+    background: rgb(0,0,0,0.2) !important;
+  }
+  .modal-header{
+    border:none !important;
+  }
+  .modal-body p{
+    color:#fff !important;
+ }
+ .modal h1{
+  color:#97FFF4 !important;
+}
+.custom-close-button{
+  border:none !important;
+  border-radius: 50% !important;
+  background-color: transparent !important;
+  color:#fff !important;
+}
+.custom-close-button:focus{
+  background: black !important;
+  border: 2px solid black !important;
+}
+.btn-previous{
+  background: #337CCF !important;
+  background-color: #000;
+  color:#fff;
+  font-weight: 900 !important;
+  text-transform: ;
+  font-size: 28px;
+  border:none !important;
+}
+.btn-previous:focus, .btn-previous:hover{
+  border:none !important;
+  color:white !important;
+}
+.btn-next{
+  background: #EA1179 !important;
+  color:#fff;
+  font-weight: 900 !important;
+  text-transform: ;
+  font-size: 28px;
+  border:none !important;
+}
+.btn-next:focus, .btn-next:hover{
+  border:none !important;
+  color:white !important;
+}
+.btn-no{
+ background: #EA1179 !important;
+ color:#fff;
+ font-weight: 900 !important;
+ text-transform: ;
+ font-size: 28px;
+ border:none !important;
+}
+.padding{
+  padding:10px 20px 10px 5px !important;
+}
+.emoji{
+  color:#B70404 !important;
+}
+</style>
+</head>
+<body class="not-loaded">
+ <audio src="audio/Restless Road - Growing Old with You.mp3" autoplay loop></audio>
+
+ <!-- START OF MODAL 1-->
+ <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Giggles & Hugs</h1>
+        <button type="button" class="custom-close-button" data-bs-dismiss="modal" aria-label="Close">
+          <img src="img/close.png" width="30">
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>You are a professional thief and that is because you manage to steal my heart again and again. 
+          <span>I love you a lot</span>
+          <span class="emoji">&#128535; &#x2764;</span>
+        </p>
+      </div>
+      <div class="padding">
+        <div class="float-end">
+          <button type="button" class="btn btn-next" data-bs-toggle="modal" data-bs-target="#modal2">Proceed</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END OF MODAL 1 -->
+
+<!-- START MODAL 2 -->
+<div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Chuckling Hearts</h1>
+        <button type="button" class="custom-close-button" data-bs-dismiss="modal" aria-label="Close">
+            <img src="img/close.png" width="30">
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>I’m so grateful that, against all odds, we ended up together. You never fail to make me laugh, and I can always count on your kindness and support to help get me through tough times. I hope, every day, that I can do the same for you. Thank you, and I love you. 
+         <span class="emoji">&#x2764; &#x2764; &#x2764; </span>
+       </p>
+     </div>
+     <div class="padding">
+      <div class="float-end">
+       <button type="button" class="btn btn-previous" data-bs-toggle="modal" data-bs-target="#modal">Previous</button>
+       <button type="button" class="btn btn-next" data-bs-toggle="modal" data-bs-target="#modal3">Next</button>
+     </div>
+   </div>
+ </div>
+</div>
+</div>
+<!-- END OF MODAL 2 -->
+
+<!-- START MODAL 3 -->
+<div class="modal" id="modal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="custom-close-button" data-bs-dismiss="modal" aria-label="Close">
+            <img src="img/left-arrow.png" width="40">
+        </button>
+      </div>
+      <div class="modal-body">
+       <h1 class="modal-title text-center fs-5" id="exampleModalLabel">Chuckling Hearts</h1>
+       <p class="text-center">In your presence, I find my smiles,<br>
+         Each glimpse of you, my heart beguiles.<br>
+         A mesmerizing, wondrous grace,<br>
+         In your embrace, I find my place.<br><br>
+
+         With you, the world's a brighter hue,<br>
+         Every moment spent with you is true.<br>
+         You light the path in the darkest night,<br>
+         In your love, I find my flight.<br><br>
+
+         So let our story gently rhyme,<br>
+         Through the sands of fleeting time.<br>
+         In your eyes, my spirit soars,<br>
+         With you, forever, my heart implores.<br><br>
+
+         In the garden of our laughter,<br>
+         We dance and twirl, happily ever after.<br>
+         Through life's twists and turns, we glide,<br>
+         Hand in hand, side by side.<br><br>
+
+         Underneath the starry sky,<br>
+         Your love, a light that will never die.<br>
+         Together, we'll face each storm,<br>
+         In your arms, I'm forever warm.<br><br>
+
+         As the seasons change and pass,<br>
+         Our love, an anchor, steadfast as brass.<br>
+         Through every joy and tear,<br>
+         With you, my love, I'll always be near.<br><br>
+       </p>
+     </div>
+     <div class="padding">
+       <div class="float-end">
+        <button type="button" class="btn btn-previous" data-bs-toggle="modal" data-bs-target="#modal">Previous</button>
+        <button type="button" class="btn btn-next" data-bs-toggle="modal" data-bs-target="#modal4">Next</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- END OF MODAL 2 -->
+
+
+
+
+<!-- START OF MODAL 4 -->
+<div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Page Transition Whimsy</h1>
+        <button type="button" class="custom-close-button" data-bs-dismiss="modal" aria-label="Close">
+            <img src="img/close.png" width="30">
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Are you sure you want to get to the next page?</p>
+      </div>
+      <div class="padding">
+       <div class="float-end">
+        <button type="button" class="btn btn-sm btn-previous" id="rejectButton" data-bs-toggle="modal" data-bs-target="#modal">No</button>
+        <button type="button" class="btn btn-sm btn-no" id="confirmButton">Yes</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- END OF MODAL 3 -->
+
+
+
+
+<main>
+  <div class="night">
+    <div class="click-btn ">
+      <button data-bs-toggle="modal" data-bs-target="#modal" class="fade-in button zoom-in">Click Me</button>
+    </div>
+  </div>
+  <div class="flowers">
+    <div class="flower flower--1">
+      <div class="flower__leafs flower__leafs--1">
+        <div class="flower__leaf flower__leaf--1"></div>
+        <div class="flower__leaf flower__leaf--2"></div>
+        <div class="flower__leaf flower__leaf--3"></div>
+        <div class="flower__leaf flower__leaf--4"></div>
+        <div class="flower__white-circle"></div>
+
+        <div class="flower__light flower__light--1"></div>
+        <div class="flower__light flower__light--2"></div>
+        <div class="flower__light flower__light--3"></div>
+        <div class="flower__light flower__light--4"></div>
+        <div class="flower__light flower__light--5"></div>
+        <div class="flower__light flower__light--6"></div>
+        <div class="flower__light flower__light--7"></div>
+        <div class="flower__light flower__light--8"></div>
+
+      </div>
+      <div class="flower__line">
+        <div class="flower__line__leaf flower__line__leaf--1"></div>
+        <div class="flower__line__leaf flower__line__leaf--2"></div>
+        <div class="flower__line__leaf flower__line__leaf--3"></div>
+        <div class="flower__line__leaf flower__line__leaf--4"></div>
+        <div class="flower__line__leaf flower__line__leaf--5"></div>
+        <div class="flower__line__leaf flower__line__leaf--6"></div>
+      </div>
+    </div>
+
+    <div class="flower flower--2">
+      <div class="flower__leafs flower__leafs--2">
+        <div class="flower__leaf flower__leaf--1"></div>
+        <div class="flower__leaf flower__leaf--2"></div>
+        <div class="flower__leaf flower__leaf--3"></div>
+        <div class="flower__leaf flower__leaf--4"></div>
+        <div class="flower__white-circle"></div>
+
+        <div class="flower__light flower__light--1"></div>
+        <div class="flower__light flower__light--2"></div>
+        <div class="flower__light flower__light--3"></div>
+        <div class="flower__light flower__light--4"></div>
+        <div class="flower__light flower__light--5"></div>
+        <div class="flower__light flower__light--6"></div>
+        <div class="flower__light flower__light--7"></div>
+        <div class="flower__light flower__light--8"></div>
+
+      </div>
+      <div class="flower__line">
+        <div class="flower__line__leaf flower__line__leaf--1"></div>
+        <div class="flower__line__leaf flower__line__leaf--2"></div>
+        <div class="flower__line__leaf flower__line__leaf--3"></div>
+        <div class="flower__line__leaf flower__line__leaf--4"></div>
+      </div>
+    </div>
+
+    <div class="flower flower--3">
+      <div class="flower__leafs flower__leafs--3">
+        <div class="flower__leaf flower__leaf--1"></div>
+        <div class="flower__leaf flower__leaf--2"></div>
+        <div class="flower__leaf flower__leaf--3"></div>
+        <div class="flower__leaf flower__leaf--4"></div>
+        <div class="flower__white-circle"></div>
+
+        <div class="flower__light flower__light--1"></div>
+        <div class="flower__light flower__light--2"></div>
+        <div class="flower__light flower__light--3"></div>
+        <div class="flower__light flower__light--4"></div>
+        <div class="flower__light flower__light--5"></div>
+        <div class="flower__light flower__light--6"></div>
+        <div class="flower__light flower__light--7"></div>
+        <div class="flower__light flower__light--8"></div>
+
+      </div>
+      <div class="flower__line">
+        <div class="flower__line__leaf flower__line__leaf--1"></div>
+        <div class="flower__line__leaf flower__line__leaf--2"></div>
+        <div class="flower__line__leaf flower__line__leaf--3"></div>
+        <div class="flower__line__leaf flower__line__leaf--4"></div>
+      </div>
+    </div>
+
+    <div class="grow-ans" style="--d:1.2s">
+      <div class="flower__g-long">
+        <div class="flower__g-long__top"></div>
+        <div class="flower__g-long__bottom"></div>
+      </div>
+    </div>
+
+    <div class="growing-grass">
+      <div class="flower__grass flower__grass--1">
+        <div class="flower__grass--top"></div>
+        <div class="flower__grass--bottom"></div>
+        <div class="flower__grass__leaf flower__grass__leaf--1"></div>
+        <div class="flower__grass__leaf flower__grass__leaf--2"></div>
+        <div class="flower__grass__leaf flower__grass__leaf--3"></div>
+        <div class="flower__grass__leaf flower__grass__leaf--4"></div>
+        <div class="flower__grass__leaf flower__grass__leaf--5"></div>
+        <div class="flower__grass__leaf flower__grass__leaf--6"></div>
+        <div class="flower__grass__leaf flower__grass__leaf--7"></div>
+        <div class="flower__grass__leaf flower__grass__leaf--8"></div>
+        <div class="flower__grass__overlay"></div>
+      </div>
+    </div>
+
+    <div class="growing-grass">
+      <div class="flower__grass flower__grass--2">
+        <div class="flower__grass--top"></div>
+        <div class="flower__grass--bottom"></div>
+        <div class="flower__grass__leaf flower__grass__leaf--1"></div>
+        <div class="flower__grass__leaf flower__grass__leaf--2"></div>
+        <div class="flower__grass__leaf flower__grass__leaf--3"></div>
+        <div class="flower__grass__leaf flower__grass__leaf--4"></div>
+        <div class="flower__grass__leaf flower__grass__leaf--5"></div>
+        <div class="flower__grass__leaf flower__grass__leaf--6"></div>
+        <div class="flower__grass__leaf flower__grass__leaf--7"></div>
+        <div class="flower__grass__leaf flower__grass__leaf--8"></div>
+        <div class="flower__grass__overlay"></div>
+      </div>
+    </div>
+
+    <div class="grow-ans" style="--d:2.4s">
+      <div class="flower__g-right flower__g-right--1">
+        <div class="leaf"></div>
+      </div>
+    </div>
+
+    <div class="grow-ans" style="--d:2.8s">
+      <div class="flower__g-right flower__g-right--2">
+        <div class="leaf"></div>
+      </div>
+    </div>
+
+    <div class="grow-ans" style="--d:2.8s">
+      <div class="flower__g-front">
+        <div class="flower__g-front__leaf-wrapper flower__g-front__leaf-wrapper--1">
+          <div class="flower__g-front__leaf"></div>
+        </div>
+        <div class="flower__g-front__leaf-wrapper flower__g-front__leaf-wrapper--2">
+          <div class="flower__g-front__leaf"></div>
+        </div>
+        <div class="flower__g-front__leaf-wrapper flower__g-front__leaf-wrapper--3">
+          <div class="flower__g-front__leaf"></div>
+        </div>
+        <div class="flower__g-front__leaf-wrapper flower__g-front__leaf-wrapper--4">
+          <div class="flower__g-front__leaf"></div>
+        </div>
+        <div class="flower__g-front__leaf-wrapper flower__g-front__leaf-wrapper--5">
+          <div class="flower__g-front__leaf"></div>
+        </div>
+        <div class="flower__g-front__leaf-wrapper flower__g-front__leaf-wrapper--6">
+          <div class="flower__g-front__leaf"></div>
+        </div>
+        <div class="flower__g-front__leaf-wrapper flower__g-front__leaf-wrapper--7">
+          <div class="flower__g-front__leaf"></div>
+        </div>
+        <div class="flower__g-front__leaf-wrapper flower__g-front__leaf-wrapper--8">
+          <div class="flower__g-front__leaf"></div>
+        </div>
+        <div class="flower__g-front__line"></div>
+      </div>
+    </div>
+
+    <div class="grow-ans" style="--d:3.2s">
+      <div class="flower__g-fr">
+        <div class="leaf"></div>
+        <div class="flower__g-fr__leaf flower__g-fr__leaf--1"></div>
+        <div class="flower__g-fr__leaf flower__g-fr__leaf--2"></div>
+        <div class="flower__g-fr__leaf flower__g-fr__leaf--3"></div>
+        <div class="flower__g-fr__leaf flower__g-fr__leaf--4"></div>
+        <div class="flower__g-fr__leaf flower__g-fr__leaf--5"></div>
+        <div class="flower__g-fr__leaf flower__g-fr__leaf--6"></div>
+        <div class="flower__g-fr__leaf flower__g-fr__leaf--7"></div>
+        <div class="flower__g-fr__leaf flower__g-fr__leaf--8"></div>
+      </div>
+    </div>
+
+    <div class="long-g long-g--0">
+      <div class="grow-ans" style="--d:3s">
+        <div class="leaf leaf--0"></div>
+      </div>
+      <div class="grow-ans" style="--d:2.2s">
+        <div class="leaf leaf--1"></div>
+      </div>
+      <div class="grow-ans" style="--d:3.4s">
+        <div class="leaf leaf--2"></div>
+      </div>
+      <div class="grow-ans" style="--d:3.6s">
+        <div class="leaf leaf--3"></div>
+      </div>
+    </div>
+
+    <div class="long-g long-g--1">
+      <div class="grow-ans" style="--d:3.6s">
+        <div class="leaf leaf--0"></div>
+      </div>
+      <div class="grow-ans" style="--d:3.8s">
+        <div class="leaf leaf--1"></div>
+      </div>
+      <div class="grow-ans" style="--d:4s">
+        <div class="leaf leaf--2"></div>
+      </div>
+      <div class="grow-ans" style="--d:4.2s">
+        <div class="leaf leaf--3"></div>
+      </div>
+    </div>
+
+    <div class="long-g long-g--2">
+      <div class="grow-ans" style="--d:4s">
+        <div class="leaf leaf--0"></div>
+      </div>
+      <div class="grow-ans" style="--d:4.2s">
+        <div class="leaf leaf--1"></div>
+      </div>
+      <div class="grow-ans" style="--d:4.4s">
+        <div class="leaf leaf--2"></div>
+      </div>
+      <div class="grow-ans" style="--d:4.6s">
+        <div class="leaf leaf--3"></div>
+      </div>
+    </div>
+
+    <div class="long-g long-g--3">
+      <div class="grow-ans" style="--d:4s">
+        <div class="leaf leaf--0"></div>
+      </div>
+      <div class="grow-ans" style="--d:4.2s">
+        <div class="leaf leaf--1"></div>
+      </div>
+      <div class="grow-ans" style="--d:3s">
+        <div class="leaf leaf--2"></div>
+      </div>
+      <div class="grow-ans" style="--d:3.6s">
+        <div class="leaf leaf--3"></div>
+      </div>
+    </div>
+
+    <div class="long-g long-g--4">
+      <div class="grow-ans" style="--d:4s">
+        <div class="leaf leaf--0"></div>
+      </div>
+      <div class="grow-ans" style="--d:4.2s">
+        <div class="leaf leaf--1"></div>
+      </div>
+      <div class="grow-ans" style="--d:3s">
+        <div class="leaf leaf--2"></div>
+      </div>
+      <div class="grow-ans" style="--d:3.6s">
+        <div class="leaf leaf--3"></div>
+      </div>
+    </div>
+
+    <div class="long-g long-g--5">
+      <div class="grow-ans" style="--d:4s">
+        <div class="leaf leaf--0"></div>
+      </div>
+      <div class="grow-ans" style="--d:4.2s">
+        <div class="leaf leaf--1"></div>
+      </div>
+      <div class="grow-ans" style="--d:3s">
+        <div class="leaf leaf--2"></div>
+      </div>
+      <div class="grow-ans" style="--d:3.6s">
+        <div class="leaf leaf--3"></div>
+      </div>
+    </div>
+
+    <div class="long-g long-g--6">
+      <div class="grow-ans" style="--d:4.2s">
+        <div class="leaf leaf--0"></div>
+      </div>
+      <div class="grow-ans" style="--d:4.4s">
+        <div class="leaf leaf--1"></div>
+      </div>
+      <div class="grow-ans" style="--d:4.6s">
+        <div class="leaf leaf--2"></div>
+      </div>
+      <div class="grow-ans" style="--d:4.8s">
+        <div class="leaf leaf--3"></div>
+      </div>
+    </div>
+
+    <div class="long-g long-g--7">
+      <div class="grow-ans" style="--d:3s">
+        <div class="leaf leaf--0"></div>
+      </div>
+      <div class="grow-ans" style="--d:3.2s">
+        <div class="leaf leaf--1"></div>
+      </div>
+      <div class="grow-ans" style="--d:3.5s">
+        <div class="leaf leaf--2"></div>
+      </div>
+      <div class="grow-ans" style="--d:3.6s">
+        <div class="leaf leaf--3"></div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<script src='assets/js/bootstrap.bundle.min.js'></script>
+</body>
+</html>
+
+</body>
+<script>
+  onload = () => {
+    const c = setTimeout(() => {
+      document.body.classList.remove("not-loaded");
+      clearTimeout(c);
+    }, 500);
+  };
+  document.addEventListener("DOMContentLoaded", function () {
+    const confirmButton = document.getElementById("confirmButton");
+    const rejectButton = document.getElementById("rejectButton");
+    
+    confirmButton.addEventListener("click", function () {
+      alert("You are now proceeding to the another page of my life.");
+      const nextPageUrl = "monthsary(2.2).html";
+      window.location.href = nextPageUrl;
+    });
+    
+    rejectButton.addEventListener("click", function () {
+      alert("You cannot escape to my love. You are mine forever.");
+    });
+  });
+</script>

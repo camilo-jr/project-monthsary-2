@@ -1,0 +1,67 @@
+body{
+	margin: 0;
+	font-family: Elephant;
+}
+.navbar ul{
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	margin:0;
+	padding:15px;
+	background-color:#080202;
+}
+.nav-item{
+	font-size:21px;
+	display: inline;
+	text-align: center;
+	font-family:Elephant;
+	list-style-type: none;
+}
+.nav-link{
+	color:#73BBC9;
+	/*font-weight: bold;*/
+	text-decoration:none;
+	font-size:21px;
+	padding:5px;
+
+}
+.nav-link:hover{
+	color:#F1D4E5;
+}
+.pl{
+	/*padding-left:10px;*/
+}
+/*.nav-link-logo{
+	color:#F1D4E5;
+	font-size:21px;
+	font-family:magneto;
+	font-weight: bold;
+}
+*/
+/*===================================*/
+/*          MAIN CONTENTS            */
+/*===================================*/
+
+
+/* HOME SECTION */
+#Home{
+	padding-top: 50px;
+	height: 100vh;
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+}
+.home-heading{
+	font-size: 34px;
+	text-align: center;
+	
+}
+#About{
+	height: 100vh;
+}
+.about-heading{
+	padding-top: 50px;
+	font-size: 34px;
+	text-align: center;
+}

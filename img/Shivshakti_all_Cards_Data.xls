@@ -1,0 +1,343 @@
+
+   <table class="table" bordered="1">  
+                    <tr>  
+                         <th>S.L</th>  
+                         <th>Card Name</th>  
+                         <th>Name</th>  
+                         <th>Father Name:</th>  
+                         <th>Mother name:</th>  
+                         <th>Aadhar No.</th>
+                         <th>Gender</th>  
+                         <th>Birthday</th>
+                         <th>Email Id:</th>  
+                         <th>Mobile N.</th>
+                         <th>Family Member</th>  
+                         <th>Address</th>
+                         <th>Staff Id</th>  
+                         <th>Issue Date:</th>
+
+                    </tr>
+  
+    <tr>  
+                         <td > 1 </td>
+                         <td>STD523696355</td>  
+                         <td>Coding Cush</td>  
+                         <td>Demo Data </td>  
+                         <td>Test Data</td>  
+                         <td>xxxxxxxxxxxx</td>  
+                         <td>Male</td> 
+                         <td>2021-12-12</td>  
+                         <td>info@lexacademy.in</td>  
+                         <td>1234567898</td> 
+                         <td>dummy text lorem ipsum </td>  
+                         <td>HarolaSector - 16Gautam Buddha nagarUttar Prades201301</td>  
+                        <td>STAFF1231233</td>  
+                        <td>2021-07-18 12:44:41</td>
+                    </tr>
+   
+    <tr>  
+                         <td > 2 </td>
+                         <td>564654646</td>  
+                         <td>lavkush singhsingh</td>  
+                         <td></td>  
+                         <td></td>  
+                         <td></td>  
+                         <td>Choose</td> 
+                         <td></td>  
+                         <td></td>  
+                         <td>4564654gf</td> 
+                         <td></td>  
+                         <td>Choose...</td>  
+                        <td></td>  
+                        <td>2021-07-18 12:32:31</td>
+                    </tr>
+   
+    <tr>  
+                         <td > 3 </td>
+                         <td>asdf</td>  
+                         <td>asdf</td>  
+                         <td></td>  
+                         <td></td>  
+                         <td></td>  
+                         <td>Choose</td> 
+                         <td></td>  
+                         <td></td>  
+                         <td>asdf</td> 
+                         <td></td>  
+                         <td>Choose...</td>  
+                        <td></td>  
+                        <td>2021-07-18 12:30:55</td>
+                    </tr>
+   
+    <tr>  
+                         <td > 4 </td>
+                         <td>asdf</td>  
+                         <td>asdf</td>  
+                         <td></td>  
+                         <td></td>  
+                         <td></td>  
+                         <td>Choose</td> 
+                         <td></td>  
+                         <td></td>  
+                         <td>asdf</td> 
+                         <td></td>  
+                         <td>Choose...</td>  
+                        <td></td>  
+                        <td>2021-07-18 12:29:36</td>
+                    </tr>
+   
+    <tr>  
+                         <td > 5 </td>
+                         <td>asdf</td>  
+                         <td>asdf</td>  
+                         <td></td>  
+                         <td></td>  
+                         <td></td>  
+                         <td>Choose</td> 
+                         <td></td>  
+                         <td></td>  
+                         <td>asdf</td> 
+                         <td></td>  
+                         <td>Choose...</td>  
+                        <td></td>  
+                        <td>2021-07-18 12:29:24</td>
+                    </tr>
+   
+    <tr>  
+                         <td > 6 </td>
+                         <td>asdf</td>  
+                         <td>asdf</td>  
+                         <td></td>  
+                         <td></td>  
+                         <td></td>  
+                         <td>Choose</td> 
+                         <td></td>  
+                         <td></td>  
+                         <td>asdf</td> 
+                         <td></td>  
+                         <td>Choose...</td>  
+                        <td></td>  
+                        <td>2021-07-18 12:29:05</td>
+                    </tr>
+   
+    <tr>  
+                         <td > 7 </td>
+                         <td>asdf</td>  
+                         <td>asdf</td>  
+                         <td></td>  
+                         <td></td>  
+                         <td></td>  
+                         <td>Choose</td> 
+                         <td></td>  
+                         <td></td>  
+                         <td>asdf</td> 
+                         <td></td>  
+                         <td>Choose...</td>  
+                        <td></td>  
+                        <td>2021-07-18 12:28:38</td>
+                    </tr>
+   
+    <tr>  
+                         <td > 8 </td>
+                         <td>asdf</td>  
+                         <td>asdf</td>  
+                         <td></td>  
+                         <td></td>  
+                         <td></td>  
+                         <td>Choose</td> 
+                         <td></td>  
+                         <td></td>  
+                         <td>asdf</td> 
+                         <td></td>  
+                         <td>Choose...</td>  
+                        <td></td>  
+                        <td>2021-07-18 12:28:01</td>
+                    </tr>
+   
+    <tr>  
+                         <td > 9 </td>
+                         <td>asdf</td>  
+                         <td>asdf</td>  
+                         <td></td>  
+                         <td></td>  
+                         <td></td>  
+                         <td>Choose</td> 
+                         <td></td>  
+                         <td></td>  
+                         <td>asdf</td> 
+                         <td></td>  
+                         <td>Choose...</td>  
+                        <td></td>  
+                        <td>2021-07-18 12:25:22</td>
+                    </tr>
+   
+    <tr>  
+                         <td > 10 </td>
+                         <td>asdfasdf</td>  
+                         <td>adfasdfasdfasdfasdfasdfasf</td>  
+                         <td></td>  
+                         <td></td>  
+                         <td></td>  
+                         <td>Choose</td> 
+                         <td></td>  
+                         <td></td>  
+                         <td>adsfasdfas</td> 
+                         <td></td>  
+                         <td>Choose...</td>  
+                        <td></td>  
+                        <td>2021-07-18 12:25:14</td>
+                    </tr>
+   
+    <tr>  
+                         <td > 11 </td>
+                         <td>asdfasdf</td>  
+                         <td>adfasdfasdfasdfasdfasdfasf</td>  
+                         <td></td>  
+                         <td></td>  
+                         <td></td>  
+                         <td>Choose</td> 
+                         <td></td>  
+                         <td></td>  
+                         <td>adsfasdfas</td> 
+                         <td></td>  
+                         <td>Choose...</td>  
+                        <td></td>  
+                        <td>2021-07-18 12:23:58</td>
+                    </tr>
+   
+    <tr>  
+                         <td > 12 </td>
+                         <td>lavkush k</td>  
+                         <td>lavkush kumar</td>  
+                         <td>sinhgh</td>  
+                         <td></td>  
+                         <td></td>  
+                         <td>Choose</td> 
+                         <td></td>  
+                         <td></td>  
+                         <td>lavkush</td> 
+                         <td></td>  
+                         <td>Choose...</td>  
+                        <td></td>  
+                        <td>2021-07-18 12:23:46</td>
+                    </tr>
+   
+    <tr>  
+                         <td > 13 </td>
+                         <td>564654646</td>  
+                         <td>lavkush singhsingh</td>  
+                         <td></td>  
+                         <td></td>  
+                         <td></td>  
+                         <td>Choose</td> 
+                         <td></td>  
+                         <td></td>  
+                         <td>4564654gf</td> 
+                         <td></td>  
+                         <td>Choose...</td>  
+                        <td></td>  
+                        <td>2021-07-18 12:22:23</td>
+                    </tr>
+   
+    <tr>  
+                         <td > 14 </td>
+                         <td>lavkush k</td>  
+                         <td>lavkush kumar</td>  
+                         <td>sinhgh</td>  
+                         <td></td>  
+                         <td></td>  
+                         <td>Choose</td> 
+                         <td></td>  
+                         <td></td>  
+                         <td>lavkush</td> 
+                         <td></td>  
+                         <td>Choose...</td>  
+                        <td></td>  
+                        <td>2021-07-18 12:20:38</td>
+                    </tr>
+   
+    <tr>  
+                         <td > 15 </td>
+                         <td>f546456</td>  
+                         <td>dsfgsadfg45sdf45g45</td>  
+                         <td>sdf45g</td>  
+                         <td>sdfg</td>  
+                         <td></td>  
+                         <td>Choose</td> 
+                         <td></td>  
+                         <td></td>  
+                         <td>564654654</td> 
+                         <td></td>  
+                         <td>Choose...</td>  
+                        <td></td>  
+                        <td>2021-07-18 12:19:02</td>
+                    </tr>
+   
+    <tr>  
+                         <td > 16 </td>
+                         <td>fsdfgsdfg</td>  
+                         <td>sdfgsdfgsdfgsdf</td>  
+                         <td>sdfgsgf</td>  
+                         <td></td>  
+                         <td></td>  
+                         <td>Choose</td> 
+                         <td></td>  
+                         <td></td>  
+                         <td>sdfgsdfg</td> 
+                         <td></td>  
+                         <td>Choose...</td>  
+                        <td></td>  
+                        <td>2021-07-18 12:16:58</td>
+                    </tr>
+   
+    <tr>  
+                         <td > 17 </td>
+                         <td>sdfgsdfg</td>  
+                         <td></td>  
+                         <td></td>  
+                         <td></td>  
+                         <td></td>  
+                         <td>Choose</td> 
+                         <td></td>  
+                         <td></td>  
+                         <td>sfdgsdfg</td> 
+                         <td></td>  
+                         <td>Choose...</td>  
+                        <td></td>  
+                        <td>2021-07-18 12:15:55</td>
+                    </tr>
+   
+    <tr>  
+                         <td > 18 </td>
+                         <td>123123213131</td>  
+                         <td>asdljfaslkdjfl</td>  
+                         <td>adskljf</td>  
+                         <td>asdklj;</td>  
+                         <td></td>  
+                         <td>Choose</td> 
+                         <td></td>  
+                         <td>emmyluckytech@gmail.com</td>  
+                         <td>8873651128</td> 
+                         <td></td>  
+                         <td>DehriChoose...</td>  
+                        <td></td>  
+                        <td>2021-07-17 17:32:40</td>
+                    </tr>
+   
+    <tr>  
+                         <td > 19 </td>
+                         <td>ABCD12345677</td>  
+                         <td>Kush Singh</td>  
+                         <td></td>  
+                         <td></td>  
+                         <td>xxxxxxxxxxxx</td>  
+                         <td>Male</td> 
+                         <td>2021-01-22</td>  
+                         <td>emmyluckytech@gmail.com</td>  
+                         <td>1234567890</td> 
+                         <td></td>  
+                         <td>DehriDehriRohtasHimachal Pra111111111</td>  
+                        <td>111111111111</td>  
+                        <td>2021-01-16 13:06:03</td>
+                    </tr>
+   </table>

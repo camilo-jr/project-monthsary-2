@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>I love you</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+  <link rel='stylesheet' href='assets/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="css/gift.css">
+  <script src="assets/js/jquery.js"></script>
+</head>
+<style>
+  .btn-container{
+    width: 100%;
+    margin-left: 30px;
+    /*text-align: center; */
+    margin-top: 10px;
+    /*margin-left: 2px !important;*/
+    bottom: 0;
+  }
+  button{
+    border-radius:10px;
+    padding: 5px 10px; /* Adjust padding */
+    font-size: 21px;
+    font-family: Elephant;
+    text-transform: uppercase;
+    background-color: #54b8aa;
+    color: #fff;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out; /* Add transition for animation */
+  }
+</style>
+
+</head>
+<body>
+  <div class="btn-container">
+    <button type="button" onclick="window.location.href='monthsary(2.1).html';">
+      <i class="fa fas fa-arrow"><i class="fa-solid fa-arrow-left"></i></i>
+    </button>
+  </div>
+  <div class='container'>  
+    <div class='row'>
+      <div class='col-12'>
+        <h3 class='text-center text my-5'><strong>hover to open and
+          <span style="color: #CD1818;">Click</span> your gift...</strong></h3>
+        </div>
+        <div class='col-12 mt-5 d-flex justify-content-center'>
+          <div class='box'>
+            <div class='box-body'>
+              <!-- Paper URL -->
+              <a href="#" data-bs-toggle="modal" data-bs-target="#m3Modals" id="modalTrigger">
+                <img decoding="async" class="img" src="img/img.png">
+              </a>
+
+              <div class='box-lid'>
+                <div class='box-bowtie'></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Button trigger modal -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="m3Modals" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-center">
+        <div class="modal-content">
+          <audio id="modalAudio" src="audio/kisses-90109.mp3" preload="auto" muted autoplay loop></audio>
+
+
+          <div class="mx-3 my-3">
+            <button type="button" class="btn-close float-end" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+           <div class="container">
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <h3 class="animate-charcter">I love you babii</h3>
+              </div>
+            </div>
+          </div>
+          <div class="text-center">
+            <img src="img/bear-kiss-bear-kisses.gif" alt="">
+          </div>
+        </div>
+        <div class="text-center mb-3">
+          <button type="button" class="btn btn-lg btn-dark" onclick="confirmMsg();">Proceed To Another Page!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // When the modal is shown
+        $('#m3Modals').on('shown.bs.modal', function () {
+            // Unmute and play the audio
+            $('#modalAudio').prop('muted', false);
+            $('#modalAudio')[0].play();
+          });
+
+        // When the modal is hidden
+        $('#m3Modals').on('hidden.bs.modal', function () {
+            // Mute the audio and rewind it
+            $('#modalAudio').prop('muted', true);
+            $('#modalAudio')[0].currentTime = 0;
+          });
+
+        // Handle clicks on the trigger
+        $('#modalTrigger').on('click', function (event) {
+          event.preventDefault();
+          $('#m3Modals').modal('show');
+        });
+      });
+    function confirmMsg(){
+      if(confirm("Are you sure you want to proceed to the next page?")){
+        window.location.href='monthsary(2.3).html';
+      }else{
+
+      }
+    }
+    </script>
+  </body>
+  </html>
